@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: install
+      run: cargo install cargo-audit
     - name: audit
       run: cargo audit
 
